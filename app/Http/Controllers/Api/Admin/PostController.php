@@ -58,7 +58,7 @@ class PostController extends Controller
             'category_id' => $request->category_id,
             'user_id'     => auth()->guard('api')->user()->id,
             'content'     => $request->content,
-            'description' => $request->description    
+            'description' => $request->description,    
         ]);
 
         //assign tags
